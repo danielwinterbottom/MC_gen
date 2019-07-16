@@ -14,6 +14,6 @@ curl -s --insecure https://cms-pdmv.cern.ch/mcm/public/restapi/requests/get_frag
 
 scram b
 cd ../../
-cmsDriver.py Configuration/GenProduction/python/HIG-RunIIFall17wmLHEGS-02398-fragment.py --fileout file:testFS.root  --pileup_input "dbs:/Neutrino_E-10_gun/RunIIFall17FSPrePremix-PUMoriond17_94X_mc2017_realistic_v15-v1/GEN-SIM-DIGI-RAW" --mc --eventcontent AODSIM --fast --datatier AODSIM --conditions 94X_mc2017_realistic_v15 --beamspot Realistic25ns13TeVEarly2017Collision --customise_commands "process.source.numberEventsInLuminosityBlock = cms.untracked.uint32(200)" --step LHE,GEN,SIM,RECOBEFMIX,DIGIPREMIX_S2,DATAMIX,L1,DIGI2RAW,L1Reco,RECO --datamix PreMix --era Run2_2017_FastSim --python_filename run_fastsim.py --no_exec --customise Configuration/DataProcessing/Utils.addMonitoring -n 1092 || exit $? ; 
+#cmsDriver.py Configuration/GenProduction/python/HIG-RunIIFall17wmLHEGS-02398-fragment.py --fileout file:testFS.root  --pileup_input "dbs:/Neutrino_E-10_gun/RunIIFall17FSPrePremix-PUMoriond17_94X_mc2017_realistic_v15-v1/GEN-SIM-DIGI-RAW" --mc --eventcontent AODSIM --fast --datatier AODSIM --conditions 94X_mc2017_realistic_v15 --beamspot Realistic25ns13TeVEarly2017Collision --customise_commands "process.source.numberEventsInLuminosityBlock = cms.untracked.uint32(200)" --step LHE,GEN,SIM,RECOBEFMIX,DIGIPREMIX_S2,DATAMIX,L1,DIGI2RAW,L1Reco,RECO --datamix PreMix --era Run2_2017_FastSim --python_filename run_fastsim.py --no_exec --customise Configuration/DataProcessing/Utils.addMonitoring -n 1092 || exit $? ; 
 
 
